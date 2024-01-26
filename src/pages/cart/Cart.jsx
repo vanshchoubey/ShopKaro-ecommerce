@@ -66,8 +66,8 @@ function Cart() {
       }),
     };
     var options = {
-      key: "rzp_test_JcBLEUxIWaGnH0",
-      key_secret: "WwfjuKzjNFDGmihBOsHRwJSB",
+      key:import.meta.env.VITE_ROZARKEY ,
+      key_secret: import.meta.env.VITE_SECRETKEY,
       amount: parseInt(grandTotal * 100),
       currency: "INR",
       order_receipt: "order_rcptid_" + checkFormData.name,
